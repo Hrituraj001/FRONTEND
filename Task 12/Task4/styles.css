@@ -1,0 +1,44 @@
+:root{
+  --red: #b91c1c;
+  --green: #0b7a24;
+  --muted: #6b7280;
+  font-family: Inter, system-ui, Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+body{
+  background:#f6f7fb;
+  display:flex;
+  justify-content:center;
+  padding:40px;
+  color:#0f172a;
+}
+
+.card{
+  width:100%;
+  max-width:520px;
+  background:#fff;
+  padding:18px;
+  border-radius:10px;
+  box-shadow:0 8px 24px rgba(15,23,42,0.06);
+}
+
+h1{margin:0 0 14px;font-size:20px}
+
+.field{margin-bottom:12px;display:flex;flex-direction:column;gap:6px}
+label{font-size:14px;color:var(--muted)}
+input{
+  padding:10px 12px;border-radius:8px;border:1px solid #e6e9ef;font-size:15px;outline:none;
+}
+input:focus{box-shadow:0 0 0 4px rgba(43,109,246,0.06);border-color:#2b6df6}
+
+/* valid / invalid borders (bonus) */
+.input-valid{border-color:var(--green);box-shadow:0 0 0 4px rgba(11,122,36,0.06)}
+.input-invalid{border-color:var(--red);box-shadow:0 0 0 4px rgba(185,28,28,0.06)}
+
+.error{color:var(--red);font-size:13px;min-height:18px}
+.success{color:var(--green);font-size:14px;margin-top:8px}
+
+.actions{margin-top:8px}
+button{padding:10px 14px;border-radius:8px;border:0;background:#0b6df6;color:#fff;cursor:pointer}
+button:active{transform:translateY(1px)}

@@ -1,0 +1,54 @@
+:root{
+  --accent:#0b6df6;
+  --muted:#6b7280;
+  --green:#0b7a24;
+  --red:#b91c1c;
+  font-family:Inter, system-ui, Arial, sans-serif;
+}
+
+body{
+  background:#f6f7fb;
+  margin:0;
+  display:flex;
+  justify-content:center;
+  padding:36px;
+}
+
+.card{
+  background:#fff;
+  padding:20px;
+  border-radius:10px;
+  max-width:600px;
+  width:100%;
+  box-shadow:0 8px 24px rgba(0,0,0,0.05);
+}
+
+h1{margin:0 0 12px;font-size:20px}
+
+.status{font-size:15px;color:var(--muted);margin-bottom:12px}
+
+.post-list{list-style:none;padding:0;margin:0}
+.post-list li{
+  padding:10px;
+  margin-bottom:6px;
+  border-radius:8px;
+  background:#f1f5f9;
+}
+
+.actions{margin-top:14px;display:flex;gap:10px}
+
+button{
+  padding:10px 14px;
+  border:0;
+  border-radius:8px;
+  background:var(--accent);
+  color:#fff;
+  cursor:pointer;
+  font-weight:600;
+}
+
+button:active{transform:translateY(1px)}
+
+#retryBtn{
+  background:var(--red);
+}

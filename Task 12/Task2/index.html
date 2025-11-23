@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Live Character Counter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Live Character Counter</h1>
+
+    <label for="message" class="label">Message (max <span id="limitDisplay">100</span> chars)</label>
+    <textarea id="message" rows="6" placeholder="Type your message..."></textarea>
+
+    <div class="status">
+      <div id="charsLeft" class="chars">Characters left: <span id="count">100</span></div>
+      <div id="hint" class="hint">Start typing...</div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

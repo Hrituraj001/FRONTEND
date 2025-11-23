@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interactive Product Filter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Product Filter</h1>
+
+    <div class="controls">
+      <div class="filters" role="tablist" aria-label="Category filters">
+        <button class="filter-btn active" data-cat="all">All</button>
+        <button class="filter-btn" data-cat="electronics">Electronics</button>
+        <button class="filter-btn" data-cat="clothing">Clothing</button>
+      </div>
+
+      <div class="search">
+        <input id="searchBox" type="search" placeholder="Search products..." aria-label="Search products">
+      </div>
+    </div>
+
+    <ul id="productList" class="product-list" aria-live="polite"></ul>
+
+    <div id="noResults" class="empty" hidden>No products found.</div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

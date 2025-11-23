@@ -1,0 +1,13 @@
+:root{font-family:Arial, sans-serif;}
+body{background:#f5f5f5;display:flex;justify-content:center;padding:40px}
+.card{background:#fff;padding:20px;border-radius:10px;max-width:600px;width:100%}
+.controls{display:flex;gap:10px;margin-bottom:15px}
+input{flex:1;padding:10px;border:1px solid #ddd;border-radius:6px}
+button{padding:10px 15px;border:0;background:#0066ff;color:#fff;border-radius:6px;cursor:pointer}
+ul{list-style:none;padding:0}
+li{display:flex;gap:10px;align-items:center;border:1px solid #eee;padding:10px;margin-bottom:8px;border-radius:6px}
+.task-text{flex:1}
+.small-btn{padding:6px 8px;border-radius:5px;border:0;cursor:pointer}
+.delete{background:#ffdddd;color:#900}
+.edit{background:#fff0cc;color:#aa5d00;border:1px solid #ffd98a}
+.save{background:#ddffdd;color:#0b7a24}

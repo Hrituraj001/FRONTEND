@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Async JS — Fetch Users</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="card">
+    <header class="header">
+      <h1>Users (JSONPlaceholder)</h1>
+      <div class="controls">
+        <button id="refreshBtn">Refresh</button>
+        <div id="spinner" class="spinner" aria-hidden="true" title="Loading" role="status">
+          <svg viewBox="0 0 50 50" class="spinner-svg" aria-hidden="true">
+            <circle cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <div class="table-wrap">
+      <table id="usersTable" class="table" aria-live="polite">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>City</th>
+          </tr>
+        </thead>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Form Validation App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Registration Form</h1>
+
+    <form id="regForm" novalidate>
+      <div class="field">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" autocomplete="name" />
+        <div class="error" id="nameError" aria-live="polite"></div>
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" />
+        <div class="error" id="emailError" aria-live="polite"></div>
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="new-password" />
+        <div class="error" id="passwordError" aria-live="polite"></div>
+      </div>
+
+      <div class="actions">
+        <button type="submit" id="submitBtn">Register</button>
+      </div>
+
+      <div id="formSuccess" class="success" aria-live="polite"></div>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
